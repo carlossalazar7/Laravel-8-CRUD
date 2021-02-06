@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
 
-	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <style>
    
     </style>

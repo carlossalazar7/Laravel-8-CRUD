@@ -4,6 +4,8 @@
 
 @section('content')
     <h1 class="text-center">Bienvenido al curso: {{$curso->name}}</h1>
+    <a href="{{route('cursos.edit', $curso)}}">Editar Curso</a><br>
+
     <a href="{{route('cursos.index')}}">Volver a cursos</a>
     <p><strong>Categoria:</strong>{{$curso->categoria}}</p>
     <p>{{$curso->descripcion}}</p>
