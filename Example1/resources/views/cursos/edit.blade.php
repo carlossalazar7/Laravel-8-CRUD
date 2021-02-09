@@ -18,7 +18,7 @@
         <input type="text" name="categoria"  value="{{$curso->categoria}}">
     </label>
     <br>
-    <button type="submit">Actualizar datos</button>
+    <button class="btn btn-success" type="submit">Actualizar datos</button>
 </form>
 
 </div>

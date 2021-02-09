@@ -7,15 +7,30 @@
     @csrf
      <label for="">Nombre <br>
             <input type="text" name="name">
-    </label><br>
+    </label>
+    @error('name')
+    <br>
+    <small>* {{$message}}</small>        
+    @enderror
+    <br>
     <label for="">
-        Descripción: <br>
+        Descripción: 
+        <br>
         <textarea name="descripcion" id="" rows="5"></textarea>
-    </label><br>
+    </label>
+    @error('descripcion')
+    <br>
+    <small>* {{$message}}</small>        
+    @enderror
+    <br>
     <label for="">
     Categoria: <br>
         <input type="text" name="categoria">
     </label>
+    @error('categoria')
+    <br>
+    <small>* {{$message}}</small>        
+    @enderror
     <br>
     <button type="submit">Enviar</button>
 </form>

@@ -9,15 +9,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
+		
 	<title>@yield('title')</title>
 	<link rel="stylesheet" type="text/css" href="../public/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-    <style>
-   
-    </style>
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
@@ -46,7 +43,7 @@
 </nav>
 <br><br>
 <body>
-    @yield('content');
+    @yield('content')
 
     <!-- Optional JavaScript; choose one of the two! -->
 
