@@ -48,6 +48,12 @@ class CursosController extends Controller
     }
     // crear una instancia de del modelo curso
     public function update(Curso $curso, Request $request){
+        $request->validate([
+            'name' => 'required|max:10',
+            'descripcion' => 'required|min:10',
+            'categoria' => 'required'
+        ]);
+
         $curso->name = $request->name;
         $curso->descripcion = $request->descripcion;
         $curso->categoria = $request->categoria;

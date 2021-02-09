@@ -7,16 +7,26 @@
     @csrf
     @method('put')
      <label for="">Nombre <br>
-            <input type="text" name="name" value="{{$curso->name}}">
-    </label><br>
+            <input type="text" name="name" value="{{ old('name', $curso->name) }}">
+    </label>
+    @error('name')
+    <br><small>{{$message}}</small>    
+    @enderror
+    <br>
     <label for="">
         Descripción:<br>
-        <textarea name="descripcion" id="" rows="5">{{$curso->descripcion}}</textarea>
-    </label><br>
+        <textarea name="descripcion" id="" rows="5">{{old('descripcion',$curso->descripcion)}}</textarea>
+    </label>
+    @error('descripcion')
+    <br><small>{{$message}}</small>    
+    @enderror<br>
     <label for="">
     Categoria: <br>
-        <input type="text" name="categoria"  value="{{$curso->categoria}}">
+        <input type="text" name="categoria"  value="{{old('categoria', $curso->categoria)}}">
     </label>
+    @error('categoria')
+    <br><small>{{$message}}</small>    
+    @enderror
     <br>
     <button class="btn btn-success" type="submit">Actualizar datos</button>
 </form>

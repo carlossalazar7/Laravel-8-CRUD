@@ -6,7 +6,7 @@
     <form action="{{route('cursos.store')}}" method="POST">
     @csrf
      <label for="">Nombre <br>
-            <input type="text" name="name">
+            <input type="text" name="name" value="{{old('name')}}">
     </label>
     @error('name')
     <br>
@@ -16,7 +16,7 @@
     <label for="">
         Descripción: 
         <br>
-        <textarea name="descripcion" id="" rows="5"></textarea>
+        <textarea name="descripcion" id="" rows="5">{{old('descripcion')}}</textarea>
     </label>
     @error('descripcion')
     <br>
@@ -25,7 +25,7 @@
     <br>
     <label for="">
     Categoria: <br>
-        <input type="text" name="categoria">
+        <input type="text" name="categoria" value="{{old('categoria')}}">
     </label>
     @error('categoria')
     <br>
